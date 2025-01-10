@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4A90E2;
+}
+
+header {
+    background-color: #4A90E2;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Section Styles */
+.email-section, .quiz-section, .score-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Email Section */
+.email-section input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.email-section button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-section button:hover {
+    background-color: #357ABD;
+}
+
+/* Quiz Section */
+.quiz-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4A90E2;
+}
+
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#options-container {
+    margin-bottom: 20px;
+}
+
+.option-container {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-buttons button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #357ABD;
+}
+
+/* Score Section */
+.score-section h2 {
+    font-size: 1.8rem;
+    color: #4A90E2;
+}
+
+#score-display {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.score-section button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.score-section button:hover {
+    background-color: #357ABD;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .email-section input, .email-section button {
+        width: 100%;
+    }
+
+    .nav-buttons button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+.email-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+
+.email-section label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.email-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-section button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.email-section button:hover {
+    background-color: #45a049;
+}

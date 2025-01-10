@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varshitha Quiz Application</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to the Varshitha Quiz Application</h1>
+        </div>
+
+        <!-- Email Input Before Starting -->
+        <div id="email-section" class="email-section">
+            <label for="name">Name:</label>
+            <input type="text" id="user-name" placeholder="Your Name" required>
+        
+            <label for="college">College:</label>
+            <input type="text" id="user-college" placeholder="Your College" required>
+        
+            <label for="branch">Branch:</label>
+            <input type="text" id="user-branch" placeholder="Your Branch" required>
+        
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+        
+
+        <!-- Quiz Section -->
+        <div id="quiz-section" class="quiz-section" style="display: none;">
+            <h2 id="quiz-title">Quiz on <span id="quiz-topic"></span></h2>
+            <p id="question-text"></p>
+
+            <!-- Options Container -->
+            <div id="options-container"></div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <button id="prev-btn" onclick="prevQuestion()" disabled>Previous</button>
+                <button id="next-btn" onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+
+        <!-- Score Section -->
+        <div id="score-section" class="score-section" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p id="score-display"></p>
+            <button onclick="showAboutPage()">About Us</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
